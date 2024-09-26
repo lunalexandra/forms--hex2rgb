@@ -1,5 +1,5 @@
 export const toRGB = (hexCode: string): string => {
-    const hexColorRegex = /^([A-Fa-f0-9]{6})#$/;
+    const hexColorRegex = /^#([A-Fa-f0-9]{6})$/;
   
     if (hexColorRegex.test(hexCode)) {
       const match = hexCode.match(/\w\w/g);
